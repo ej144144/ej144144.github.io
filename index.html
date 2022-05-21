@@ -589,9 +589,18 @@
       yaxis: { 
         'showticklabels': true, 
         'autorange': false,
+        tickangle = 45,
+        tickfont = dict(
+        family = 'Old Standard TT, serif',
+        size = 14,
+        color = 'black'
+        ),
+        tickmode = 'linear',
+        tick0 = 0.0,
+        dtick = 1.0,
         'showgrid': true,
         'zeroline': true,
-        tickfont: { size: 8 }
+        //tickfont: { size: 8 }
       },
       xaxis: {
         'range': [0, maxRecords],
