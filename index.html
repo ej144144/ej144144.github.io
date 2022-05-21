@@ -263,7 +263,7 @@
     </div>
 
     <div class="double widget">
-      <div class="label">&#127968; Breath AcEtone - </div>
+      <div class="label">&#127968; Breath AcETOne - </div>
       <div class="label" id="bsec-value"></div>
       <div class="label"></div>
       <div id="bsec" class="doublegraph"></div>
@@ -586,7 +586,13 @@
       paper_bgcolor: '#111111',
       margin: { l: 8, r: 8, b: 18, t: 18 },
       showlegend: false,
-      yaxis: { 'showticklabels': true },
+      yaxis: { 
+        'showticklabels': true, 
+        'autorange': false,
+        'showgrid': true,
+        'zeroline': true,
+        tickfont: { size: 8 }
+      },
       xaxis: {
         'range': [0, maxRecords],
         'showticklabels': true,
