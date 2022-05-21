@@ -276,6 +276,13 @@
       <div class="shortgraph" id="co2"></div>
     </div>
 
+    <div class="short widget">
+      <div class="label">&#x1F4A8; Gas Value -</div>
+      <div class="label" id="gas-value"></div>
+      <div class="label"></div>
+      <div class="shortgraph" id="gas"></div>
+    </div>
+
   </div>
 </body>
 
@@ -755,7 +762,7 @@
   initGraph('pressure');
   initGraph('bsec');
   initGraph('co2');
-  //initGraph('gas');
+  initGraph('gas');
 
   init3D();
   requestAnimationFrame(draw);
